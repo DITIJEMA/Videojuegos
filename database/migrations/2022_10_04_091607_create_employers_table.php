@@ -14,8 +14,12 @@ class CreateEmployersTable extends Migration
     public function up()
     {
         Schema::create('employers', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('empleado_id');
             $table->timestamps();
+            $table->float('salario', 8, 2);
+            $table->date('fecha_contratacion');
+
+            $table->foreign('empleado_id')->references('id')->on('users');
         });
     }
 

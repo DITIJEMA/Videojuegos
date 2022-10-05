@@ -14,8 +14,11 @@ class CreateClientTable extends Migration
     public function up()
     {
         Schema::create('client', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('cliente_id');
             $table->timestamps();
+            $table->float('dinero', 8, 2);
+
+            $table->foreign('cliente_id')->references('id')->on('users');
         });
     }
 

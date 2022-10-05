@@ -14,8 +14,12 @@ class CreateOrdersMTable extends Migration
     public function up()
     {
         Schema::create('orders_m', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id_cliente');
+            $table->unsignedBigInteger('id_videojuego');
             $table->timestamps();
+
+            $table->foreign('id_cliente')->references('cliente_id')->on('client');
+            $table->foreign('id_videojuego')->references('id')->on('videogames');
         });
     }
 
