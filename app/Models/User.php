@@ -10,6 +10,18 @@ use Laravel\Sanctum\HasApiTokens;
 
 class User extends Authenticatable
 {
+    public function type_employee(){
+        return $this->hasOne(Employees::class);
+    }
+
+    public function state(){
+        return $this->hasOne(State::class);
+    }
+
+    public function status(){
+        return $this->hasOne(Status::class);
+    }
+
     use HasApiTokens, HasFactory, Notifiable;
 
     /**

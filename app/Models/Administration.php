@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Administration extends Model
 {
+    public function user(){
+        return $this->hasOne(User::class);
+    }
+
     use HasFactory;
 }
