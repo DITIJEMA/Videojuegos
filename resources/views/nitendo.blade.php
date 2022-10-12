@@ -3,34 +3,11 @@
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-   <script>
-      let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
 
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
-      }
-    });
-  };
-});
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
-   </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 *{
@@ -97,99 +74,9 @@ body{
    font-size: 2rem;
    color:#444;
 }
-.products-preview{
-   position: fixed;
-   top:0; left:0;
-   min-height: 100vh;
-   width: 100%;
-   background: rgba(0,0,0,.8);
-   display: none;
-   align-items: center;
-   justify-content: center;
-}
-.products-preview .preview{
-   display: none;
-   padding:2rem;
-   text-align: center;
-   background: #fff;
-   position: relative;
-   margin:2rem;
-   width: 40rem;
-}
-.products-preview .preview.active{
-   display: inline-block;
-}
-.products-preview .preview img{
-   height: 30rem;
-}
-.products-preview .preview .fa-times{
-   position: absolute;
-   top:1rem; right:1.5rem;
-   cursor: pointer;
-   color:#444;
-   font-size: 4rem;
-}
-.products-preview .preview .fa-times:hover{
-   transform: rotate(90deg);
-}
-.products-preview .preview h3{
-   color:#444;
-   padding:.5rem 0;
-   font-size: 2.5rem;
-}
-.products-preview .preview .stars{
-   padding:1rem 0;
-   font-size: 1.7rem;
-}
-.products-preview .preview .stars i{
-   color:#27ae60;
-}
-.products-preview .preview .stars span{
-   color:#999;
-}
-.products-preview .preview p{
-   line-height: 1.5;
-   padding:1rem 0;
-   font-size: 1.6rem;
-   color:#777;
-}
-.products-preview .preview .price{
-   padding:1rem 0;
-   font-size: 2.5rem;
-   color:#27ae60;
-}
-.products-preview .preview .buttons{
-   display: flex;
-   gap:1.5rem;
-   flex-wrap: wrap;
-   margin-top: 1rem;
-}
-.products-preview .preview .buttons a{
-   flex:1 1 16rem;
-   padding:1rem;
-   font-size: 1.8rem;
-   color:#444;
-   border:.1rem solid #444;
-}
-.products-preview .preview .buttons a.cart{
-   background: #444;
-   color:#fff;
-}
-.products-preview .preview .buttons a.cart:hover{
-   background: #111;
-}
-.products-preview .preview .buttons a.buy:hover{
-   background: #444;
-   color:#fff;
-}
 @media (max-width:991px){
    html{
       font-size: 55%;
-   }
-}
-@media (max-width:768px){
-  .products-preview .preview img{
-      height: 25rem;
    }
 }
 @media (max-width:450px){
@@ -198,129 +85,97 @@ body{
    }
 }
     </style>
-   
 <div class="container">
-
 
    <h3 class="title">VIDEOJUEGOS</h3>
 
    <div class="products-container">
 
       <div class="product" data-name="p-1">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/ark.jpg')}}">
+         <h3>Ark Survival Evolved Nintendo Switch Juego físico Nintendo Nintendo Switch</h3>
+         <div class="price">$ 1,060.00</div>
+       <a href="">Comprar</a>
       </div>
 
       <div class="product" data-name="p-2">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/futbol.jpg')}}">
+         <h3>Mario Strikers: Battle League - Nintendo Switch - Standard Edition</h3>
+         <div class="price">$ 1,199.00</div>
+          <a href="">Comprar</a>
       </div>
 
       <div class="product" data-name="p-3">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/kirby.jpg')}}">
+         <h3>Kirby and the Forgotten Land - Standard Edition - Nintendo Switch</h3>
+         <div class="price">$ 1,199.00</div>
+          <a href="">Comprar</a>
       </div>
 
       <div class="product" data-name="p-4">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/luigi.jpg')}}">
+         <h3>Luigi’s Mansion 3 - Nintendo Switch - Standard Edition</h3>
+         <div class="price">$ 1,299.00</div>
+          <a href="">Comprar</a>
       </div>
 
       <div class="product" data-name="p-5">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/mario.jpg')}}">
+         <h3>Luigi’s Mansion 3 - Nintendo Switch - Standard Edition</h3>
+         <div class="price">$ 1,349.00</div>
+          <a href="">Comprar</a>
       </div>
 
       <div class="product" data-name="p-6">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/mario_kar.jpg')}}">
+         <h3>Mario Kart 8 Deluxe - Nintendo Switch - Standard Edition</h3>
+         <div class="price">$ 1,900.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/mortal.jpg')}}">
+         <h3>Mortal Kombat 11 Ultimate (Nintendo Switch) - STANDARD EDITION Edition</h3>
+         <div class="price">$ 1,187.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/smash.jpg')}}">
+         <h3>Super Smash Bros. Ultimate - Standard Edition - Nintendo Switch</h3>
+         <div class="price">$ 1,124.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/street.jpg')}}">
+         <h3>Street Fighter - 30th Anniversary Collection - Standard Edition - Nintendo Switch</h3>
+         <div class="price">$ 670.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/zelda.jpg')}}">
+         <h3>The Legend of Zelda: Breath of the Wild - Nintendo Switch - Standard Edition</h3>
+         <div class="price">$ 1,185.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/metroid.jfif')}}">
+         <h3>TMetroid Dread - Standard Edition - Nintendo Switch</h3>
+         <div class="price">$ 1,099.00</div>
+          <a href="">Comprar</a>
+      </div>
+
+      <div class="product" data-name="p-12">
+         <img src="{{URL::asset('/resources/views/photo/Nitendo/mario3D.jpg')}}">
+         <h3>Super Mario 3D World + Bowser’s Fury - Standard Edition - Nintendo Switch</h3>
+         <div class="price">$ 1,124.00</div>
+          <a href="">Comprar</a>
       </div>
 
    </div>
-
-</div>
-
-<div class="products-preview">
-
-   <div class="preview" data-target="p-1">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-2">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-3">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-4">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-5">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-6">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
-  
 
 </div>
 
