@@ -87,8 +87,7 @@ body{
         <div class="card">
             <img src="{{URL::asset('/resources/views/photo/xbox.png')}}">
             <h4>X-BOX</h4>
-            <p>X-BOX 
-        S Y X-BOX SERIES X</p>
+            <p>X-BOX SERIES X</p>
             <a href="">VER VIDEOJUEGOS</a>
         </div>
 
