@@ -25,7 +25,7 @@ html{
    overflow-x: hidden;
 }
 body{
-   background: red;
+   background: blue;
 }
 .container{
    max-width: 1200px;
@@ -95,39 +95,75 @@ body{
    <div class="products-container">
 
       <div class="product" data-name="p-1">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/call.jpg')}}">
+         <h3>Call Of Duty Black Ops: Cold War</h3>
+         <div class="price">$ 1,399.00</div>
       </div>
 
       <div class="product" data-name="p-2">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/far.jpg')}}">
+         <h3>Far Cry 6 Standard Edition</h3>
+         <div class="price">$ 580.00</div>
       </div>
 
       <div class="product" data-name="p-3">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/fifa22.jpg')}}">
+         <h3>FIFA 22</h3>
+         <div class="price">$ 660.00</div>
       </div>
 
       <div class="product" data-name="p-4">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/fifa23.jpg')}}">
+         <h3>FIFA 23</h3>
+         <div class="price">$ 1,299.00</div>
       </div>
 
       <div class="product" data-name="p-5">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/GTA5.jpg')}}">
+         <h3>Grand Theft Auto V</h3>
+         <div class="price">$ 799.00</div>
       </div>
 
       <div class="product" data-name="p-6">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/red.jpg')}}">
+         <h3>Red Dead Redemption 2</h3>
+         <div class="price">$ 499.00</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/rayman.jpg')}}">
+         <h3>Rayman Legends</h3>
+         <div class="price">$ 439.00</div>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/RE8.jpg')}}">
+         <h3>Resident Evil 8 Village</h3>
+         <div class="price">$ 799.00</div>
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/spiderman.jpg')}}">
+         <h3>Spider-Man: Miles Morales Ultimate</h3>
+         <div class="price">$ 1,749.00</div>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/watch.jpg')}}">
+         <h3>Watch Dogs Legion</h3>
+         <div class="price">$ 439.00</div>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/god.jpg')}}">
+         <h3>God of War Ragnarök</h3>
+         <div class="price">$ 499.00</div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="{URL::asset('/resources/views/photo/Play/PS5/TLOU.jfif')}}">
+         <h3>THE LAST OF US PART 1 </h3>
+         <div class="price">$ 1,399.00</div>
       </div>
 
    </div>
