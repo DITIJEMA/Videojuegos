@@ -7,33 +7,8 @@
    
   
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-  
-
 </head>
 <body>
-<script>
-      let preveiwContainer = document.querySelector('.products-preview');
-let previewBox = preveiwContainer.querySelectorAll('.preview');
-document.querySelectorAll('.products-container .product').forEach(product =>{
-  product.onclick = () =>{
-    preveiwContainer.style.display = 'flex';
-    let name = product.getAttribute('data-name');
-    previewBox.forEach(preview =>{
-      let target = preview.getAttribute('data-target');
-      if(name == target){
-        preview.classList.add('active');
-      }
-    });
-  };
-});
-previewBox.forEach(close =>{
-  close.querySelector('.fa-times').onclick = () =>{
-    close.classList.remove('active');
-    preveiwContainer.style.display = 'none';
-  };
-});
-   </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
 *{
@@ -50,7 +25,7 @@ html{
    overflow-x: hidden;
 }
 body{
-   background: red;
+   background: green;
 }
 .container{
    max-width: 1200px;
@@ -209,122 +184,81 @@ body{
    <div class="products-container">
 
       <div class="product" data-name="p-1">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/assessins.jpg')}}" alt="">
+         <h3>Assassins Creed Valhalla Microsoft</h3>
+         <div class="price">$ 929.00</div>
       </div>
 
       <div class="product" data-name="p-2">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/call.jpg')}}">
+         <h3>Call Of Duty Black Ops: Cold War</h3>
+         <div class="price">$ 1,190.00</div>
       </div>
 
       <div class="product" data-name="p-3">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/elden.webp')}}">
+         <h3>	Elden Ring</h3>
+         <div class="price">$ 1,190.00</div>
       </div>
 
       <div class="product" data-name="p-4">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/far.jpg')}}">
+         <h3>Far Cry 6</h3>
+         <div class="price">$ 399.00</div>
       </div>
 
       <div class="product" data-name="p-5">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/fifa22.jpg')}}">
+         <h3>FIFA 22</h3>
+         <div class="price">$ 299.00</div>
       </div>
 
       <div class="product" data-name="p-6">
-         <img src="" alt="">
-         <h3></h3>
-         <div class="price"></div>
+         <img src="URL::asset('/resources/views/photo/Xbox/fifa23.jpg')}}">
+         <h3>FIFA 23</h3>
+         <div class="price">$ 1,699.00</div>
+      </div>
+
+      <div class="product" data-name="p-7">
+         <img src="URL::asset('/resources/views/photo/Xbox/forza.webp')}}">
+         <h3>Forza Horizon</h3>
+         <div class="price">$ 799.00</div>
+      </div>
+
+      <div class="product" data-name="p-8">
+         <img src="URL::asset('/resources/views/photo/Xbox/gears.jpg')}}">
+         <h3>GEARS 5</h3>
+         <div class="price">$ 499.00</div>
+      </div>
+
+      <div class="product" data-name="p-9">
+         <img src="URL::asset('/resources/views/photo/Xbox/halo.png')}}">
+         <h3>HALO Infinite</h3>
+         <div class="price">$ 599.00</div>
+      </div>
+
+      <div class="product" data-name="p-10">
+         <img src="URL::asset('/resources/views/photo/Xbox/RE8.jpg')}}">
+         <h3>Resident Evil 8 Village</h3>
+         <div class="price">$ 649.00</div>
+      </div>
+
+      <div class="product" data-name="p-11">
+         <img src="URL::asset('/resources/views/photo/Xbox/KNY.jpg')}}">
+         <h3>Demon Slayer. Kimetsu no Yaiba - the Hinokami Chronicles </h3>
+         <div class="price">$ 999.00</div>
+      </div>
+
+      <div class="product" data-name="p-12">
+         <img src="URL::asset('/resources/views/photo/Xbox/Batle.jpg')}}">
+         <h3>Battlefield 2042</h3>
+         <div class="price">$ 959.00</div>
       </div>
 
    </div>
 
 </div>
 
-<div class="products-preview">
-
-   <div class="preview" data-target="p-1">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-2">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-3">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-4">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-5">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
- <div class="preview" data-target="p-6">
-    <i class="fas fa-times"></i>
-    <img src="" alt="">
-    <h3></h3>
-    <p></p>
-    <div class="price"></div>
-    <div class="buttons">
-       <a href="#" class="buy">COMPRAR</a>
-       <a href="#" class="cart">AGREGAR</a>
-    </div>
- </div>
-
-  
-
-</div>
 
 </body>
 </html> 
