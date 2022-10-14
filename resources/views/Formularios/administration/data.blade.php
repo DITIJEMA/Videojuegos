@@ -1,5 +1,5 @@
 <?php
-$ = $->read_all();
+$registros = $->read_all();
 if (isset($_GET['estatus'])) {
   $estatus = $_GET['estatus'];
 ?>
@@ -25,8 +25,8 @@ if (isset($_GET['estatus'])) {
   <tbody>
 
     <?php
-    $ = $->read_all();
-    foreach ($ as $) {
+    $registros = $->read_all();
+    foreach ($registros as $) {
     ?>
 
   <tbody>
@@ -34,8 +34,8 @@ if (isset($_GET['estatus'])) {
       <td><?php echo $->id_usuario; ?></td>
       <td><?php echo $->salario; ?></td>
       <td><?php echo $->fecha_contratacion; ?></td>
-      <td><a href="index.php?editar&id=<?php echo $arc->id_usuario ?>">Editar</a></td>
-      <td><a href="index.php?borrar&id=<?php echo $arc->id_usuario ?>">Borrar</a></td>
+      <td><a href="index.php?editar&id=<?php echo $->id_usuario ?>">Editar</a></td>
+      <td><a href="index.php?borrar&id=<?php echo $->id_usuario ?>">Borrar</a></td>
     </tr>
   <?php
     }
