@@ -13,7 +13,7 @@ $registros = $->read_all();
     <?php
     include "head.php";
     ?>
-    <title>ESTATUS</title>
+    <title>USUARIO</title>
 </head>
 
 <body>
@@ -46,7 +46,7 @@ $registros = $->read_all();
                 <div class="container  border-top border-primary "  id="contenedor-formulario">
                     <div class="text-center mb-4" id="titulo-formulario">
                         <div><img src="" alt="" class="img-fluid ps-5"></div>
-                        <h2>ESTATUS</h2>
+                        <h2>USUARIO</h2>
                         <p class="fs-5">COMPLETA EL FORMULARIO</p>
                     </div>
 
