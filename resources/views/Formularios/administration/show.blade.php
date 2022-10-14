@@ -18,14 +18,14 @@
 
       <div class="col-md-3 mb-3">
         <label for="salario">SALARIO</label>
-        <input type="number" class="form-control" id="validationCustom02" name="salario" value="<?php echo $->salario ?>" required>
+        <input type="number" class="form-control" id="validationCustom02" name="salario" value="<?php echo $->salario ?>">
         <div class="valid-feedback">Registro corecto</div>
         <div class="invalid-feedback">Hay un error revice por favor</div>
       </div>
 
         <div class="col-md-3 mb-3">
           <label for="fecha_contratacion">FECHA DE CONTRATACION</label>
-          <input type="date" class="form-control" id="validationCustom02" name="fecha_contratacion" value="<?php echo $->fecha_contratacion ?>" required>
+          <input type="date" class="form-control" id="validationCustom02" name="fecha_contratacion" value="<?php echo $->fecha_contratacion ?>">
           <div class="valid-feedback">Registro corecto</div>
           <div class="invalid-feedback">Hay un error revice por favor</div>
         </div>
